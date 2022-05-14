@@ -1,0 +1,203 @@
+---
+title: "Affective Polarization in Brazil"
+author: "Larissa Migotto"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+header-includes:
+  - \usepackage{bm}
+output:
+  pdf_document:
+    number_sections: true
+    fig_caption: yes
+    fig_height: 8
+    fig_width: 8
+    latex_engine: xelatex
+    citation_package: biblatex
+    keep_tex: true
+fontsize: 10pt
+geometry: margin=1in
+graphics: yes
+mainfont: "Helvetica"
+bibliography: bibliography.bib
+biblio-style: "authoryear-comp,natbib"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Question, Theory, and Significance
+
+Categorizing others as "Bolsominions" (Bolsonaro supporters) or "Mortadelas" (Lula supporters) has become a popular trend in Brazil. These are some of the derogatory nicknames based on individuals' political allegiance in the country. They are often used to classify and avoid others whose political preferences do not align with their own. This example is part of a phenomenon that has been labelled by Americanists as affective polarization [@iyengar2012affect]. Different than ideological polarization, that is based on divergent *policy preferences*, affective polarization is associated with strong negative *emotions* towards opposing political groups. In simple terms, it is an "animosity between citizens based on their political allegiance" [@harteveld2021ticking]. Affective polarization is a relational concept, as it captures "the extent to which citizens express antipathy towards members of other parties and/or affinity for members of their own" [@baron2021can].
+
+According to a recent national public opinion poll, eighty percent (80%) of Brazilians consider that their society is "deeply polarized" (Despolarize, Instituto Locomotiva, Fundação Tide Setubal 2022). This polarization can pose a significant threat to rational democratic discourse [@saveski2021perspective]. It has been proven that there are consequences of affective polarization to democracy in several aspects: for instance, electoral accountability [@graham2020democracy; @kingzette2021affective], democratic legitimacy [@hetherington2015washington; @mccoy2018polarization]; and democratic attitudes such as tolerance for the opposition [@levitsky2018democracies] and willingness to criticize co-partisans [@iyengar2019origins]. Besides this, affective polarization is highly correlated with democratic backsliding, less accountability, less freedom, fewer rights, and less deliberation in democracies [@orhan2022relationship]. Considering all the implications that affective polarization can have for democracy, addressing how to depolarize highly polarized political environments is an important research agenda in the political science field. 
+
+There are two competing theories that aim to explain how depolarization can work. The first one I call "information exposure." @bail2018exposure shows how this theory has presented mixed results in empirical studies. A set of work has shown that disrupting selective exposure to partisan information will decrease political polarization because of intergroup contact effects [@pettigrew2006meta; @huckfeldt2004political; @mutz2002cross; @gronlund2015does]. By receiving arguments from the "out-group", people would be in contact with other views and thus this would promote intergroup contact and reduce polarization. On the other hand, a second group of articles presents opposite results: exposure to those with opposing political views may create backfire effects that exacerbate political polarization [@bail2014terrified; @lord1979biased; @nyhan2010corrections; @taber2006motivated]. @wojcieszak2022information shows how different types of information drives polarization. I argue that these mixed results might be a product of the *type* of information that was shared. Considering it, I choose to present balanced evidence-based articles with an equal proportion of arguments for and against a polarizing issue in order to test this first theory.
+
+Besides this, my second theoretical approach is the "perspective-getting" theory [@kalla2021narrative; @damen2021benefits; @eyal2018perspective]. It suggests that "receiving perspectives from others, as opposed to relying on one's own powers of imagination or impression formation, is a powerful tool for changing judgments and opinions about marginalized groups" [@paluck2021perspective]. This theory considers political opinions as part of people's core identity. When presented with arguments from the outgroup (like the first theory advocates), people would actually feel threatened. This non-judgmental exchanging narratives is a compassionate approach to persuasion that aims to reducing the feeling of  identity threat.
+
+# Hypothesis
+
+Given these two theories, I formulate the following hypotheses: 
+
+*H1:* People who receive information from out-group with an equal proportion of arguments for and against a polarizing issue (first theory) will have a slightly decreasing effect in their affective polarization score.
+
+*H2:* People who receive the perspective-getting treatment through a non-judgmental exchanging narratives (second theory) will have a significantly larger effect than the information treatment.
+
+Considering the mixed results from the first theory, I expect that receiving arguments/information (even balanced evidence-based ones) will have some depolarizing effect, but will not be more effective than the perspective-getting theory. My expectation is due because the second theory has been proven to have strong effects in empirical studies, at least in the U.S. context.
+
+# Data, Research Design, Advantanges and Disadvantages
+
+In relation to my data and research design, in order to test my hypothesis and answer my question, I plan to use a randomized survey experiment to collect data, combined with an interview to be able to know more about what people are thinking. Randomization will break covariate relationships, eliminate confounding and some causal alternative explanations, make known the reference distribution (given  null hypothesis, and test statistics), as well as provide fairness and transparency in my design.
+
+Some advantages of using survey experiments include extensiveness, flexibility and cost. In relation to the first point, surveys have a potential large population and the ability to gather larger amounts of information. Because of its large population, it can deliver higher statistical power. Regarding flexibility, surveys can be conducted online, in-person, through phone, social media, among other platforms. It might be easier to reach people who live in remote areas with this approach. Finally, in relation to costs, surveys have a small cost per respondent in comparison to other data collection approaches.
+
+Some disadvantages or problems using survey experiments include SUTVA (Stable Unit Treatment Values Assumption), information equivalence issues (people's life experiences can be considered "pre-treatment" and affects survey experiment outcomes), spillover effects (when previous questions function as a "pre-treatment" and impact the outcomes), and non-compliance. Other issues to be aware of encompass social desirability bias and hypothetical bias [@incerti2019corruption].
+
+# Measures and Indices
+
+@druckman2019we discuss what we measure when we measure affective polarization. In the U.S. research agenda about the topic, @kingzette2021affective asserts that "research relying on measures of feelings toward the opposing "Party" vastly overstates levels of partisan animosity in the American public." In one hand, there is weak mass partisan identity in Brazil, which hinders measurement of affective polarizing along party lines. However, I argue that there is a clear recognition of the political elites and candidate supporters divergences, due to the personalist politics in Latin America, which offers a chance to measure affective polarization in these dimensions, instead of party lines. Given that, I will develop an Affective Polarization Index. This will include a feeling thermometer and three social-distance items.
+
+In the public opinion dataset from the Brazilian Electoral Panel Study (ESEB), two questions are asked in relation to feeling thermometers: "How much do you like this party?" and "How much do you like this candidate?" (with the options of main parties and candidates available). I argue that it is necessary to distinguish between attitudes toward party elites and ordinary partisans. Therefore, I aim to measure the feelings towards candidate supporters. The social-distance items will measure people's judgment of social context and their own affect. They are three: comfort with the other candidate supporter as a friend, neighbor, or guest in their home for a meal. These questions measure the level of intimacy (or distance) individuals are comfortable having with opposing candidate supporters [@iyengar2012affect; @levendusky2016mis].
+
+# Interpretable Comparisons, Hawthorn Effects, Noncompliance, and Survey Attrition
+
+In relation to Hawthorne effects, I plan to show unrelated information and video narrative to control groups. By doing this, I will make sure the findings resulted from increased exposure to information about outgroup and/or the perspective getting approach, and not exposure to opposing messages/perspective getting per se.
+
+To address issues of noncompliance, I will create questions about the information and video narrative presented to both treatment and control groups. For instance, questions like "If you're reading this question, select option 1."
+
+Regarding attrition in surveys, there two main types: non-response attrition and dropout attrition. Some preventive measures for non-response would be: to use incentive, not over-survey, and display the time required to take the survey. Other measures to prevent participants from droping out from the study would be: keep the survey size comparable to the incentive, keep questions on-topic, and avoid ambiguity in the questions. I plan to create a pilot survey in order to avoid some of these issues initially. I also plan to seek assistance from the University of Illinois Center for Innovation in Teaching and Learning (CITL) with their Survey Research Services (survey construction, design, and implementation).
+
+In relation to my measurement and conceptualization strategy, it might be argued that feeling thermometer ("liking" types of measure) are not the only thing that matters for affective polarization or that we do not need to demand people to like each other in order to have less affective polarization. I argue that by using this measure we can understand the bigger picture of social trust and social cohesion, as a group measure, not as an individualized measure. This study aims to address this bigger question in social trust and cohesion by studying individuals.
+
+# Missing Data and Extreme Outcomes
+
+As one of the most common approaches used to deal with missing data (EGAP), I would use imputation or "filling in" of missing values. In this case, predict the missing value x based on education and whether someone is a Bolsonaro supporter. I will use these two characteristics to predict the missing values for people with these similar covariates.
+
+In relation to  potential extreme outcomes or covariate values, I would introduce calipers and penalties to prevent them from exerting too much influence over the research design.
+
+# Hypothesis Tests 
+
+A good hypothesis test has an expectation, claim or statement about unobserved results, function of potential outcomes, or counterfactual outcomes. These expectations can come from other authors, us, or theory. One way to talk about causality is to talk about counterfactuals. Fisher's Sharp Null Hypothesis tests the hypothesis of no relationship; in other words, no effect in treated and control group (they have same results). The p-value helps us decide if we should reject the null hypothesis or not. P-value means the probability that random chance generated the data, or something else that is equal or rarer. Ho: Yi(1) = Yi(0). Randomization makes sure that the individuals do not have any substantial differences in terms of covariates (I plan to show it on a table, comparing the covariates in treated and control groups). For instance, by chance individuals 1 and 3 were treated, but it could have been individuals 2 and 4. To create a reference distribution, we reassign treatment and see the proportion of times we see these outcomes. Then, the group of all possible treatment and control pairs is the reference distribution.
+
+# Test Performance
+
+Tests should have a controlled false positive rate (Controlled Type I Error). In other words, I want a test that rejects the truth rarely. Low and controlled false positive rate, for instance, no more than 5% false positive if using alpha = .05. I also want it to have few declared "signals" when it is only "noise" -- rarely say "significant" when no relationship exists. False positive rate is the proportion of p-values less than 0.05 when there is no effect, and it occurs across repetitions of p-values.
+
+I also want the test to be statistically powerful. The test should pick up a signal when there is one and reject false hypothesis quickly (Low Type II error or High Power). Statistical power is the probability that the test correctly rejects the null hypothesis. Low power means that the test has a small chance of detecting a true effect or that the results are likely to be distorted by random and systematic error. Power of eighty percent or more (=>80%) is often considered the conventional threshold. Finally, I also want an unbiased test. The test should not always or never reject the null hypothesis.
+
+# How My Test Performs
+
+False positive rate and power is in the diagnosis1 table (code appendix). We found 95% coverage (the proportion of the time that the interval contains the true value of interest) for the first design and 97% for the second. The power of the first design was very low (0.16), but this is because the effect was low as well (0.07). For the second design, the power was very high (1.00).
+
+# Estimator and Estimand
+
+An estimator is a way to calculate a guess about the value of an estimand. The standard error of an estimator summarizes how the estimates would vary if the experiment were repeated, assuming it was randomized (EGAP). Estimators should be unbiased, precise, and consistent. I use ordinary least squares with robust standard errors (lm_robust function) as my estimator. The target of estimation (estimand) is the Average Treatment Effect (ATE), the difference between the mean treatment group (Y_Z_1) and mean control group (Y_Z_0).
+
+# Estimator Performance
+
+Statistical bias is when a model or statistic is unrepresentative of the population, and there are several sources of bias that cause this. Mean Squared Error (MSE) of an estimator measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. In the diagnosis1 table (code appendix), the bias is very low (0.01) and the RMSE is 0.08 for both designs.
+
+# Mock Analysis
+
+If the real outcomes were as I have simulated it, then the diagnosis1 table (code appendix) would mean that the the average treatment effect of the information treatment is just 0.07, and the average treatment effect of the perspective-getting treatment is 0.67. This would mean that my first hypothesis H1 is correct--people who receive information from out-group (first theory) would have a slightly decreasing effect in their affective polarization score. However, the low statistical power increases the likelihood that a statistically significant finding represents a false positive result. Power can be influenced by sample size, effect size, and significance level. In this case, the effect size is too small, and this is why I have such low power. Additionally, these findings would also mean that those who receive the perspective from others through a non-judgmental exchanging narratives (second theory) would have a significantly larger effect than the information theory, which is also what my second hypothesis H2 predicted. For the second finding, we have high power and coverage, as well as low bias and mean squared error.
+
+# GitHub Repository
+<https://github.com/larissamigotto/FinalPaperSpring22>
+
+# Code Appendix
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# DeclareDesign 
+library(DeclareDesign)
+
+# Independent variable - information / narrative exchange
+# Dependent variable -  affective polarization score
+# The logic is that information / narrative exchange would reduce affective 
+# polarization score.
+
+# MIDA - Model, Inquiry, Data Strategy, Answer Strategy
+# M - Model of how the world works
+# Pretreatment variables, potential outcomes, and probability distribution over
+# pretreatment variables
+# Baseline variables: candidate supporter, education
+# Potential outcomes: social distance to other group. a single variable. This 
+# will depend if individual is Bolsonaro supporter and education level
+
+## Here we are imagining a fixed or finite population
+set.seed(12345)
+model_fn <- declare_model(N=1000,
+                       bolsonaro_supporter=rbinom(N,1,.3), # 30%
+                       education=draw_categorical(N,prob=c(.1,.25,.25,.1,.05)), 
+                       # 5 categories: 10% no high school, 25% high school 
+                       # complete, 25% some college, 10% bachelor's degree, 
+                       # 5% higher than bachelor's degree
+                       U=draw_count(N,mean=1.5)) # unobserved heterogeneity, 
+# natural variability. 
+fixed_pop <- model_fn()
+pop <- declare_model(fixed_pop)
+
+po_info <- declare_potential_outcomes(Y1 ~ .25*Z1 - .25*sd(U)*bolsonaro_supporter - 
+                                        .1*sd(U)*Z1*U + U,assignment_variables="Z1") 
+# potential outcomes for information theory
+
+po_pers <- declare_potential_outcomes(Y2 ~ .5*Z2 - .25*sd(U)*bolsonaro_supporter + 
+                                        .1*sd(U)*Z2*U + U,assignment_variables="Z2") 
+# potential outcomes for perspective-getting theory
+
+# I - Inquiry
+# Question about the model. It can be descriptive, casual 
+# In my case, it's a causal inquiry: E(Y|do(Z=1)) - E(Y|do(Z=0))
+# Average treatment of some treatment in a particular outcome
+
+inquiry1 <- declare_inquiry(ATE1=mean(Y1_Z1_1 - Y1_Z1_0)) # average treatment 
+# effect. Y_Z_1 = treated potential outcome; Y_Z_0 = control potential outcome
+inquiry2 <- declare_inquiry(ATE2=mean(Y2_Z2_1 - Y2_Z2_0)) 
+
+rev_info <- declare_reveal(Y1,Z1) ## reveals the observed Y1
+rev_pers <- declare_reveal(Y2,Z2)
+
+# Data Strategy
+# Treatment assignment - What interventions we randomly assign (or not randomly 
+# assign) to these study units
+
+assign_info <- declare_assignment(Z1=complete_ra(N)) # information theory
+assign_pers <- declare_assignment(Z2=complete_ra(N)) # perspective-getting theory
+
+des <- pop + assign_info + assign_pers + po_info + po_pers + rev_info + rev_pers +
+  inquiry1 + inquiry2
+
+fakedat <- draw_data(des)
+draw_estimand(des)
+boxplot(Y1~Z1,data=fakedat)
+boxplot(Y2~Z2,data=fakedat)
+
+# A - Answer Strategy
+# What you do with the data in order to provide an answer to the inquiry
+# How do we take that data and produce an answer 
+
+est1_ate1 <- declare_estimator(Y1~Z1,model=lm_robust,inquiry="ATE1",label="est1 of ate1")
+est1_ate2 <- declare_estimator(Y2~Z2, model=lm_robust,inquiry="ATE2", label = "est1 of ate2")
+
+est1_ate1(fakedat)
+est1_ate2(fakedat)
+
+des_plus_est <- des + est1_ate1 + est1_ate2
+
+draw_estimates(des_plus_est)
+
+# Diagnosis
+# Running the design over and over again through a Monte Carlo simulation and 
+# then calculating summary statistics of those sampling distributions
+# What's the average estimate we get out of this design? 
+# est1 = 0.08 (low effect), est2 = 0.68
+# What's the average estimand that we get? 
+# ATE1 = 0.07 (low effect), ATE2 = 0.68
+# What's the average difference of them which would be bias? 
+# bias = 0.01 (very low)
+
+set.seed(12354)
+diagnosis1 <- diagnose_design(des_plus_est,bootstrap_sims = 0,sims=100)
+diagnosis1
+
+```
